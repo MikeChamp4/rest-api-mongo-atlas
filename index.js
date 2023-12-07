@@ -19,7 +19,8 @@ mongoose.connect(urlMongodb,
         app.listen(port, () => {
             console.log('\n------------ Server ---------------');
             console.log(`Server in port: ${port}`);
-            console.log(`URL: http://localhost:${port}`);
+            console.log(`DEV URL: http://localhost:${port}`);
+            console.log(`PROD URL: https://rest-api-mongo-atlas.onrender.com/api/task`);
             console.log('-----------------------------------\n');
             
             console.log('\n-------- Server Responses ---------');
