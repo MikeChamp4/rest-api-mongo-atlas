@@ -51,7 +51,7 @@ async function getTaskById(req, res){
             res.status(200).send({task})
         }
 
-    } catch {
+    } catch (error) {
         res.status(500).send(error)
     }
 }
